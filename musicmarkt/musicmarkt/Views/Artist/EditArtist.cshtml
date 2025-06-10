@@ -1,0 +1,45 @@
+﻿@model EntitiLayer.Concreate.Artist
+@{
+    ViewBag.Title = "EditArtist";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Yazar Düzenleme Sayfası</h2>
+@using(Html.BeginForm("EditArtist","Artist",FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.Label("Yazar ID")
+                    @Html.TextBoxFor(x => x.ArtistID, new { @class = "form-control" })
+                    <br /><br />
+                    @Html.Label("Yazar Adı")
+                    @Html.TextBoxFor(x => x.ArtistName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistName)
+                    <br /><br />
+                    @Html.Label("Yazar soyadı")
+                    @Html.TextBoxFor(x => x.ArtistSurname, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistSurname)
+                    <br /><br />
+                    @Html.Label("Yazar Mail")
+                    @Html.TextBoxFor(x => x.ArtistMail, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistMail)
+                    <br /><br />
+                    @Html.Label("Yazar şifre")
+                    @Html.TextBoxFor(x => x.ArtistPassword, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistPassword)
+                    <br /><br />
+                    @Html.Label("Yazar Görsel Linki")
+                    @Html.TextBoxFor(x => x.ArtistImage, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistImage)
+                    <br /><br />
+                    @Html.Label("Yazar Ünvanı")
+                    @Html.TextBoxFor(x => x.ArtistTitle, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistTitle)
+                    <br /><br />
+                    @Html.Label("Yazar Hakkında")
+                    @Html.TextBoxFor(x => x.ArtistAbout, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ArtistAbout)
+                    <br /><br />
+                    <button class="btn btn-info">Yazarı ekle</button>
+                </div>
+            }
+

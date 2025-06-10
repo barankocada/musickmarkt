@@ -1,0 +1,29 @@
+﻿@using EntitiLayer.Concreate
+@model List<Category>
+
+@{
+    ViewBag.Title = "GetCategoryList";
+}
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>AD</th>
+        <th>Açıklama</th>
+        <th>Durum</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+            <td>@item.CategoryDescription</td>
+            <td>@item.CategoryStatus</td>
+        </tr>
+    }
+
+</table>
+

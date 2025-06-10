@@ -1,0 +1,24 @@
+﻿@model EntitiLayer.Concreate.Song
+@{
+    ViewBag.Title = "AddSong";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Şarkı Ekleme</h1>
+<br />
+@using (Html.BeginForm("AddSong", "Song", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Şarkı Adı")
+        @Html.TextBoxFor(x => x.SongName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.SongName)
+        <br /><br />
+        @Html.Label("Kategori")
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.vlc, new { @class = "form-control" })
+        <br /><br />
+        @Html.Label("Yazar")
+        @Html.DropDownListFor(x => x.ArtistID, (List<SelectListItem>)ViewBag.vla, new { @class = "form-control" })
+        <br /><br />
+        <button class="btn btn-success">Şarkıyı Oluştur</button>
+    </div>
+}

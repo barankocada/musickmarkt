@@ -1,0 +1,12 @@
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntitiLayer.dll.config
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntitiLayer.dll
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntitiLayer.pdb
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntityFramework.dll
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntityFramework.xml
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\obj\Debug\EntitiLayer.csproj.AssemblyReference.cache
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\obj\Debug\EntitiLayer.csproj.CoreCompileInputs.cache
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\obj\Debug\EntitiLa.1716A3F9.Up2Date
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\obj\Debug\EntitiLayer.dll
+C:\Users\TKA\source\repos\musicmarkt\EntitiLayer\obj\Debug\EntitiLayer.pdb

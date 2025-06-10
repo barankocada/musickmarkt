@@ -1,0 +1,30 @@
+﻿@model EntitiLayer.Concreate.Song
+
+@{
+    ViewBag.Title = "EditSong";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Şarkı güncelleme sayfası</h2>
+@using (Html.BeginForm("EditSong","Song",FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.Label("Başlık ID")
+                    @Html.TextBoxFor(x => x.SongID, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Başlık Adı")
+                    @Html.TextBoxFor(x => x.SongName, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Tarih")
+                    @Html.TextBoxFor(x => x.SongDate, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Yazar ID")
+                    @Html.TextBoxFor(x => x.ArtistID, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Kategori")
+                    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.vlc, new { @class = "form-control" })
+                    <br />
+                    <button class="btn btn-success">Güncelle</button>
+                </div>
+            }
+
